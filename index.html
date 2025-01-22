@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Task Master</h1>
+        <div id="auth">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+        </div>
+        <div id="todo-section" style="display: none;">
+            <input type="text" id="search" placeholder="Search tasks...">
+            <div id="task-form">
+                <input type="text" id="task-title" placeholder="Task Title">
+                <textarea id="task-description" placeholder="Task Description"></textarea>
+                <input type="date" id="task-deadline">
+                <select id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button id="add-task">Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
